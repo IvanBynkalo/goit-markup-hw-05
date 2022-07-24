@@ -162,6 +162,8 @@ body {
         rgba(47, 48, 58, 0.4)), url(../images/fon.jpg);
     background-position: center ;
     background-size: cover;
+    max-width: 1600px;
+    margin: 0 auto;
     padding: 200px 0;
     text-align: center;
     background-color: #C4C4C4;;
@@ -471,6 +473,15 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
         background: #2196F3;
         color: #FFFFFF;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.work-list-link {
+    display: block;
+}
+
+.work-list-link:hover,
+.work-list-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .work-name {
         font-weight: 700;
