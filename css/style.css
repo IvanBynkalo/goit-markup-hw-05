@@ -85,6 +85,7 @@ body {
     margin-right: 50px;
 }
 .nav-list-link {
+    current: #188CE8;
          font-weight: 500;
         line-height: 1.14;
         letter-spacing: 0.02em;
@@ -96,18 +97,19 @@ body {
  {
         color: #2196F3;
 }
-.nav-list-link-color {
+.nav-list .nav-list-link.current {
        color: #2196F3;
+       position: relative;
 }
-.nav-list-link-color::after {
+.nav-list .nav-list-link.current::after {
     content: "";
-    width: 78px;
+    width: 100%;
     height: 4px;
     background: #2196F3;
     border-radius: 2px;
     display: block;
     position: absolute;
-    margin-top: 28px;
+    margin-top: 28px; 
 }
 
 .contact-number {
@@ -247,6 +249,25 @@ body {
     padding-bottom: 94px;
     
 }
+.job-comtent-img {
+    position: relative;
+}
+.job-content-item-text{
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: 224px;
+     width: 370px;
+    height: 70px;
+     font-weight: 700;
+    line-height: 1.14;
+       text-transform: uppercase;
+    color: #ffffff;
+    background: rgba(47, 48, 58, 0.8);
+}
+
 .job-content-list {
     display: flex;
     flex-wrap: wrap;
